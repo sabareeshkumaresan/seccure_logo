@@ -29,5 +29,6 @@ replace_file "30e500f584235c2912f16c790345f966.svg" "$PLUGIN_PUBLIC/30e500f58423
 
 # Replace Background
 replace_file "wazuh_login_bg.svg" "$CORE_ASSETS/wazuh_login_bg.svg"
+replace_file "securityDashboards.chunk.5.js" "$PLUGIN_PUBLIC/securityDashboards.chunk.5.js"
 
 echo "Dashboard Upgrade is completed."
