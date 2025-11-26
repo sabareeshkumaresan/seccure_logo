@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Define base paths
+CORE_ASSETS="/usr/share/wazuh-dashboard/src/core/server/core_app/assets"
+PLUGIN_PUBLIC="/usr/share/wazuh-dashboard/plugins/securityDashboards/target/public"
+
+# Function to replace file and set permissions
+replace_file() {
+    local src="$1"
+    local dest="$2"
+    
+    if [ -f "$src" ]; then
+        echo "Replacing $dest with $src..."
+        sudo cp "$src" "$dest"
+        sudo chown wazuh-dashboard:wazuh-dashboard "$dest"
+        sudo chmod 640 "$dest"
+    else
+        echo "Warning: Source file $src not found. Skipping."
+    fi
+}
+
+# Replace Logos
+replace_file "wazuh_mark_on_dark.svg" "$CORE_ASSETS/logos/wazuh_mark_on_dark.svg"
+replace_file "spinner_on_dark.svg" "$CORE_ASSETS/logos/spinner_on_dark.svg"
+replace_file "spinner_on_light.svg" "$CORE_ASSETS/logos/spinner_on_light.svg"
+
+# Replace Plugin Assets
+replace_file "30e500f584235c2912f16c790345f966.svg" "$PLUGIN_PUBLIC/30e500f584235c2912f16c790345f966.svg"
+
+# Replace Background
+replace_file "wazuh_login_bg.svg" "$CORE_ASSETS/wazuh_login_bg.svg"
+
+echo "Dashboard Upgrade is completed."
