@@ -35,4 +35,7 @@ replace_file "securityDashboards.chunk.5.js" "$PLUGIN_PUBLIC/securityDashboards.
 replace_file "theme.js" "/usr/share/wazuh-dashboard/src/core/server/ui_settings/settings/theme.js"
 replace_file "navigation.js" "/usr/share/wazuh-dashboard/src/core/server/ui_settings/settings/navigation.js"
 
+# Force Dark Theme
+replace_file "legacy_dark_theme.css" "$CORE_ASSETS/legacy_light_theme.css"
+
 echo "Dashboard Upgrade is completed."
