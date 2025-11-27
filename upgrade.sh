@@ -39,4 +39,10 @@ replace_file "navigation.js" "/usr/share/wazuh-dashboard/src/core/server/ui_sett
 # Force Dark Theme
 replace_file "legacy_dark_theme.css" "$CORE_ASSETS/legacy_light_theme.css"
 
+# Replace Additional Logos
+replace_file "300x70px.svg" "/usr/share/wazuh-dashboard/node_modules/getos/imgs/logo.svg"
+replace_file "300x70px.svg" "/usr/share/wazuh-dashboard/src/plugins/console/public/application/logo.svg"
+replace_file "300x70px.svg" "/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/images/themes/dark/logo.svg"
+replace_file "300x70px.svg" "/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/images/themes/light/logo.svg"
+
 echo "Dashboard Upgrade is completed."
