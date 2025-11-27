@@ -31,4 +31,8 @@ replace_file "30e500f584235c2912f16c790345f966.svg" "$PLUGIN_PUBLIC/30e500f58423
 replace_file "wazuh_login_bg.svg" "$CORE_ASSETS/wazuh_login_bg.svg"
 replace_file "securityDashboards.chunk.5.js" "$PLUGIN_PUBLIC/securityDashboards.chunk.5.js"
 
+# Replace UI Settings
+replace_file "theme.js" "/usr/share/wazuh-dashboard/src/core/server/ui_settings/settings/theme.js"
+replace_file "navigation.js" "/usr/share/wazuh-dashboard/src/core/server/ui_settings/settings/navigation.js"
+
 echo "Dashboard Upgrade is completed."
