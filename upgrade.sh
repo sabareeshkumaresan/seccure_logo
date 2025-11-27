@@ -21,6 +21,7 @@ replace_file() {
 
 # Replace Logos
 replace_file "wazuh_mark_on_dark.svg" "$CORE_ASSETS/logos/wazuh_mark_on_dark.svg"
+replace_file "wazuh_mark_on_light.svg" "$CORE_ASSETS/logos/wazuh_mark_on_light.svg"
 replace_file "spinner_on_dark.svg" "$CORE_ASSETS/logos/spinner_on_dark.svg"
 replace_file "spinner_on_light.svg" "$CORE_ASSETS/logos/spinner_on_light.svg"
 
