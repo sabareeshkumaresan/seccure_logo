@@ -3,5 +3,5 @@
   <g>
     <!-- ... your existing shapes ... -->
   </g>
-  <text x="300" y="150" font-size="80" fill="#FFD700" font-family="Impact, Charcoal, sans-serif">SECCURE</text>
+  <text x="50%" y="50%" font-size="80" fill="#FFD700" font-family="Impact, Charcoal, sans-serif" text-anchor="middle" dominant-baseline="central">SECCURE</text>
 </svg>
